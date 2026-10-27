@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(make test *)",
+      "Bash(make lint *)",
+      "Bash(vendor/bin/phpunit *)",
+      "Bash(composer test *)",
+      "Bash(npm test *)",
+      "Bash(npm run lint *)"
+    ],
+    "deny": [
+      "Bash(git push *)",
+      "Bash(rm -rf *)",
+      "Bash(psql *)",
+      "Bash(mysql *)",
+      "Bash(ssh *)",
+      "Read(/mnt/c/Users/malixds/.ssh/**)",
+      "Read(/mnt/c/Users/malixds/.aws/**)",
+      "Read(~/.ssh/**)",
+      "Read(/mnt/c/Users/malixds/work/**)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true
+  }
+}
