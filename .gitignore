@@ -1,0 +1,19 @@
+# Окружение и секреты
+.env
+.env.local
+
+# Зависимости
+vendor/
+node_modules/
+
+# Временные файлы и кеш
+var/
+*.log
+
+# IDE и ОС
+.idea/
+.vscode/
+.DS_Store
+
+# Локальные настройки Claude Code
+.claude/settings.local.json
