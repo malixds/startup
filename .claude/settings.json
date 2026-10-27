@@ -17,13 +17,19 @@
       "Bash(psql *)",
       "Bash(mysql *)",
       "Bash(ssh *)",
-      "Read(/mnt/c/Users/malixds/.ssh/**)",
-      "Read(/mnt/c/Users/malixds/.aws/**)",
-      "Read(~/.ssh/**)",
-      "Read(/mnt/c/Users/malixds/work/**)"
+      "Read(//mnt/c/Users/malixds/.ssh/**)",
+      "Read(//mnt/c/Users/malixds/.aws/**)",
+      "Read(~/.ssh/**)"
     ]
   },
   "sandbox": {
-    "enabled": true
+    "enabled": true,
+    "filesystem": {
+      "denyRead": [
+        "/mnt/c/Users/malixds/.ssh",
+        "/mnt/c/Users/malixds/.aws",
+        "/home/malixds/.ssh"
+      ]
+    }
   }
 }
